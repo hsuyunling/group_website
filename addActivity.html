@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增活動</title>
+    <link rel="stylesheet" href="headStyle.css">
+    <link rel="stylesheet" href="addActivity.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="head">
+        <a href="homepage.html">
+            <h1>JIO</h1>
+            <p>揪      團</p>
+        </a>
+        <ul>
+            <li class="userMenu"><a href="#"><i class="fa-regular fa-circle-user"></i></a>
+                <ol class="navMy">
+                    <li><a href="profile.html"><i class="fa-solid fa-user"></i>個人檔案</a></li>
+                    <li><a href="myAct.html"><i class="fa-solid fa-star"></i>我的活動</a></li>
+                    <li><a href="settings.html"><i class="fa-solid fa-gear"></i>設定</a></li>
+                    <li><a href="javascript:;"><i class="fa-solid fa-right-from-bracket"></i>登出</a></li>
+                </ol>
+            </li>
+            <li class="bell"><a href="#"><i class="fa-solid fa-bell"></i></a>
+                <div class="notification">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>通知</h4>
+                <div class="notify-content">
+                    <p>暫無通知</p>
+                </div>
+            </div>
+            </li>
+        </ul>
+        <div class="head-center">
+            <p>新增一個活動</p>
+        </div>
+    </div>
+
+        <a href="homepage.html" class="left-button" id="backBtn">
+            <i class="fa-solid fa-arrow-left"></i>
+            <p>返回</p>
+        </a>
+
+
+    <div class="main-content">
+        <div class="basic-information">
+            <h1>關於此活動的基本資訊</h1>
+            <ul>
+                <li>
+                    <h2>活動名稱：</h2>
+                    <input type="text" class="actName">
+                </li>
+                <li>
+                    <h2>活動時間：</h2>
+                    <input type="text" class="actTime">
+
+                </li>
+                <li>
+                    <h2>活動地點：</h2>
+                    <input type="text" class="actPlace">
+                    <input type="checkbox" value="online">線上活動
+                    <input type="text" class="address" placeholder="輸入詳細地址...">
+
+                </li>
+                <li>
+                    <h2>活動費用：</h2>
+                    <input type="text" class="actPrice">
+                    <input type="checkbox" value="free">免費活動
+
+                </li>
+                <li>
+                    <h2>人數限制：</h2>
+                    <input type="text" class="actNumOfPpl">
+                    <input type="checkbox">無限制
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="act-settings">
+            <h1>活動報名設定</h1>
+            <ul>
+                <li>
+                    <h2>報名截止時間：</h2>
+                    <input type="text">
+                    <input type="text">
+
+                </li>
+                <li>
+                    <h2>參與者：</h2>
+                    <input type="radio" name="anonymous">可匿名
+                    <input type="radio" name="anonymous">不可匿名
+                </li>
+            </ul>
+        </div>
+
+        <div class="act-intro">
+            <h1>簡單介紹你的活動</h1>
+            <textarea name="act-intro" id="act-intro"></textarea>
+        </div>
+
+
+
+        <a href="javascript:;">確認</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="addAct.js"></script>
+</body>
+</html>

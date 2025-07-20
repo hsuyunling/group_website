@@ -1,0 +1,203 @@
+@import url('reset.css');
+
+body{
+    font-family: '微軟正黑體';
+    background-color: rgb(243, 243, 243);
+}
+
+.head{
+    height: 200px;
+    background: linear-gradient(90deg,rgba(255, 141, 59, 1) 1%, rgba(250, 217, 147, 1) 50%, rgba(255, 199, 59, 1) 100%);  
+
+    position: relative;
+
+}
+
+.head a h1{
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 0 10px rgb(255, 255, 255);
+    float: left;
+    line-height: 150px;
+    margin: 10px 0 10px 80px;
+
+}
+
+.head a p{
+    display: block;
+    font-size: 25px;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+    margin: 0 30px 20px;
+    color: white;
+    text-shadow: 1px 0 5px rgb(255, 255, 255);
+    white-space: pre;
+}
+
+.head-center{
+    height: 100%;
+    /* width: 1480px; */
+    margin: 0 auto;
+    padding-top: 60px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.head-center input{
+    display: block;
+    height: 30px;
+    width: 65%;
+    font-size: 25px;
+    border: 3px solid #b8b8b8;
+    border-radius: 25px;
+    padding: 20px;
+    padding-right: 40px;
+    margin-left: 200px;
+    text-align: right;
+}
+
+.head-center i{
+    display: block;
+    height: 50px;
+    font-size: 45px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.head ul{
+    float: right;
+    width: 250px;
+    margin-right: 20px;
+
+}
+
+.head ul li{
+    float: right;
+    margin: 50px 20px;
+
+}
+
+.userMenu{
+    position: relative;
+    z-index: 100;
+}
+
+.navMy{
+    display: none;
+    float: right;
+    width: 300px;
+    position: absolute;
+    right: -10px;
+    top: 90px;
+    border-radius: 20px;
+    background-color: rgb(253, 226, 158);
+    padding-bottom: 15px;
+    box-shadow: 0 0 8px rgba(178, 178, 178, 0.792);
+    
+}
+
+.userMenu .navMy li{
+    display: block;
+    width: 90%;
+    height: 70px;
+    background-color: rgb(231, 174, 49);
+    border-radius: 50px;
+    margin: 15px 15px 0;
+    padding-left: 20px;
+    box-sizing: border-box;    
+}
+
+.userMenu .navMy li:hover{
+    background-color: rgb(138, 111, 61);
+}
+
+.userMenu .navMy i{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.userMenu .navMy a{
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 70px;
+    color: white;
+}
+
+.userMenu:hover .navMy{
+    display: block;
+
+}
+
+.bell{
+    position: relative;
+    z-index: 200;
+}
+
+.bell .notification{
+    display: none;
+    float: right;
+    width: 400px;
+    position: absolute;
+    right: -10px;
+    top: 90px;
+    border-radius: 20px;
+    background-color: rgb(255, 197, 71);
+    padding-bottom: 15px;
+    box-shadow: 0 0 8px rgba(178, 178, 178, 0.792);
+    box-sizing: border-box;
+}
+
+.bell:hover .notification{
+    display: block;
+
+}
+
+.bell .notification i{
+    float: left;
+}
+
+.bell .notification i:hover{
+    cursor: default;
+    color: white;
+}
+
+.bell .notification i, .bell .notification h4{
+    font-size: 30px;
+    line-height: 30px;
+    margin: 15px;
+    margin-left: 35px;
+    color: white;
+}
+
+.bell .notify-content{
+    margin: 0 10px;
+    background-color: white;
+    height: 530px;
+    border-radius: 15px;
+}
+
+.bell .notify-content p{
+    text-align: center;
+    line-height: 540px;
+    font-size: 25px;
+    color: #b8b8b8;
+}
+
+.head ul a{
+    display: block;
+    font-size: 50px;
+    line-height: 100px;
+}
+
+.head i{
+    color: white;
+}
+
+.head i:hover{
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="41.789318mm"
+   height="58.378246mm"
+   viewBox="0 0 41.789318 58.378246"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="genderIcon.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.79080115"
+     inkscape:cx="378.09758"
+     inkscape:cy="484.31897"
+     inkscape:current-layer="layer1">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="41.789318"
+       height="58.378246"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="圖層 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-122.59307,-106.435)">
+    <g
+       id="g1"
+       inkscape:export-filename="../揪團網頁設計/personalPhoto.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       style="fill:#ffffff">
+      <rect
+         style="fill:#ffffff;stroke:none;stroke-width:3.06378;stroke-opacity:1"
+         id="rect45"
+         width="41.789318"
+         height="25.915855"
+         x="122.59307"
+         y="138.89738"
+         rx="4.6049085"
+         ry="5.8899994" />
+      <path
+         style="fill:#ffffff;stroke:none;stroke-width:3.46501;stroke-opacity:1"
+         id="path46"
+         sodipodi:type="arc"
+         sodipodi:cx="143.48773"
+         sodipodi:cy="118.25911"
+         sodipodi:rx="11.824108"
+         sodipodi:ry="11.824108"
+         sodipodi:start="0"
+         sodipodi:end="6.2570915"
+         sodipodi:open="true"
+         sodipodi:arc-type="arc"
+         d="m 155.31184,118.25911 a 11.824108,11.824108 0 0 1 -11.74697,11.82386 11.824108,11.824108 0 0 1 -11.90024,-11.6696 11.824108,11.824108 0 0 1 11.59171,-11.9761 11.824108,11.824108 0 0 1 12.05147,11.51334" />
+    </g>
+  </g>
+</svg>
