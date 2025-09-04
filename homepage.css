@@ -90,7 +90,7 @@
 }
 
 .main-content li{
-    width: 330px;
+    width: 30%;
     height: 329px;
     overflow: hidden;
     padding-bottom: 9px;
@@ -134,7 +134,7 @@
 
 }
 .top h2{
-    margin-right: 80px;
+/*     margin-right: 80px; */
 }
 
 .top h2 a{
