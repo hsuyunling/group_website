@@ -7,18 +7,28 @@
 
 .left-content{
     float: left;
-    width: 268px;
+    width: 238px;
+    z-index: 100;
+    position: relative;
 
 }
 
-.left-content > a:first-child{
-    display: inline-block;
+.left-content a{
+    display: block;
     text-decoration: none;
-    font-size: 25px;
-    line-height: 80px;
+    cursor: pointer;
+}
+
+.left-content i{
+    margin: 0 10px;
+}
+
+.left-content .actRaising{
+    font-size: 23px;
+    line-height: 70px;
     text-align: center;
-    height: 80px;
-    width: 220px;
+    height: 70px;
+    width: 190px;
     border-radius: 20px;
     background: linear-gradient(90deg,rgba(255, 163, 92, 1) 3%, rgba(255, 202, 69, 1) 100%);
     color: white;
@@ -29,58 +39,59 @@
 
 }
 
-.left-content li:hover{
-    box-shadow: 0 0 5px 3px rgba(128, 128, 128, 0.416);
-    transform: scale(1.1);
-    background-color: rgb(255, 168, 70);
+.left-content .actSort{
+    font-size: 23px;
+    margin: 15px;
+    margin-top: 40px;
 }
 
-.left-content ul{
+.left-content ol{
+    border: 0 solid rgb(31, 29, 112);
+    margin: 0 auto;
+}
+
+.left-content .actFilter li{
+    font-size: 16px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.left-content .actFilter li:hover{
     font-size: 20px;
-    text-align: center;
-}
-
-.left-content ul li{
-    height: 80px;
-    background-color: rgb(245, 161, 66);
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 3px rgba(128, 128, 128, 0.416);
+    background-color: rgb(249, 249, 249);
 }
 
 .left-content li a{
     text-decoration: none;
-    color: white;
+    color: black;
 
-    display: block;
     height: 100%;
-    line-height: 80px;
+    line-height: 50px;
     transition: .2s;
 }
 
-.left-content ul a p{
-    float: left;
-    box-sizing: border-box;
-}
-
-/* -------center-------- */
+/* ---------------center---------------- */
 .main-content{
-    width: 1480px;
+    width: 1050px;
     margin: 0 auto;
-    /* background-color: white; */
     position: relative;
 }
 
 .main-content ul{
     padding-top: 20px;
-    padding-left: 40px;
+    /* padding-left: 20px; */
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* 控制 li 之間的間距 */
+    gap: 15px; /* 控制 li 之間的間距 */
     align-items: flex-start;
 
 }
 
 .main-content li{
-    width: 450px;
-    height: 359px;
+    width: 330px;
+    height: 329px;
     overflow: hidden;
     padding-bottom: 9px;
 
@@ -106,7 +117,7 @@
 .top h2,.top h3,.main-content p{
     margin: 0 30px 20px;
 
-    font-size: 20px;
+    font-size: 1em;
     display: block;
 }
 
@@ -114,7 +125,7 @@
 .top h1{
     margin: 25px 30px 20px;
 
-    font-size: 30px;
+    font-size: 1.7em;
     display: block;
 }
 
@@ -152,7 +163,7 @@
 }
 
 .shopping{
-    background-color: rgb(47, 74, 182);
+    background-color: rgb(47, 137, 182);
 }
 
 .eating{
@@ -166,42 +177,38 @@
 
 /* ------------放大版------------- */
 .main-content .detailed{
-    width: 1000px;
-    height: 800px;
-    position: absolute;
-    top: -50px;
-    left: 240px;
+    width: 900px;
+    height: auto;
+    position: fixed;
+    top: 50px;
+    left: 290px;
     padding: 10px;
     float: none;
     z-index: 300;
-    overflow: auto;
 
     box-shadow: 0 0 5px 3px rgba(128, 128, 128, 0.416);
 }
 
 .main-content .btns{
     display: none;
-    font-size: 45px;
+    font-size: 35px;
     margin-right: 20px;
 
-    position: absolute;
-    top: -15px;
-    right: 250px;
+    position: fixed;
+    top: 80px;
+    right: 310px;
     z-index: 500;
 
     cursor: pointer;
 }
 
 .main-content .detailed h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .detailed h2,.detailed h3,.detailed p{
-    font-size: 30px;
-    margin-bottom: 50px;
-}
-
-.detailed p{
+    font-size: 20px;
+    margin-bottom: 40px;
 }
 
 /* --------------footer----------------- */

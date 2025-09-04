@@ -3,10 +3,12 @@
 body{
     font-family: '微軟正黑體';
     background-color: rgb(243, 243, 243);
+    height: 100%;
+    width: 100%;
 }
 
 .head{
-    height: 200px;
+    height: 120px;
     background: linear-gradient(90deg,rgba(255, 141, 59, 1) 1%, rgba(250, 217, 147, 1) 50%, rgba(255, 199, 59, 1) 100%);  
 
     position: relative;
@@ -14,24 +16,23 @@ body{
 }
 
 .head a h1{
-    font-size: 80px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     color: white;
     text-shadow: 1px 0 10px rgb(255, 255, 255);
     float: left;
-    line-height: 150px;
-    margin: 10px 0 10px 80px;
+    margin: 20px 0 10px 80px;
 
 }
 
 .head a p{
     display: block;
-    font-size: 25px;
+    font-size: 18px;
     position: absolute;
-    bottom: 20px;
-    left: 60px;
-    margin: 0 30px 20px;
+    top: 60px;
+    left: 50px;
+    margin: 15px 30px 0;
     color: white;
     text-shadow: 1px 0 5px rgb(255, 255, 255);
     white-space: pre;
@@ -39,46 +40,73 @@ body{
 
 .head-center{
     height: 100%;
-    /* width: 1480px; */
     margin: 0 auto;
-    padding-top: 60px;
     box-sizing: border-box;
 
     display: flex;
+    justify-content: right;
 }
 
 .head-center input{
     display: block;
-    height: 30px;
-    width: 65%;
-    font-size: 25px;
-    border: 3px solid #b8b8b8;
-    border-radius: 25px;
-    padding: 20px;
-    padding-right: 40px;
+    height: 10px;
+    width: 28%;
+    font-size: 18px;
+    border: 0 solid rgb(107, 107, 107);
+    border-radius: 50px;
+    padding: 15px;
     margin-left: 200px;
-    text-align: right;
+    margin-top: 40px;
 }
 
-.head-center i{
-    display: block;
-    height: 50px;
-    font-size: 45px;
-    margin-left: 15px;
-    margin-top: 15px;
+.head-center .fa-solid{
+    font-size: 30px;
+    margin: 45px 70px 0 15px;
 }
 
 .head ul{
     float: right;
-    width: 250px;
+    width: 200px;
     margin-right: 20px;
 
 }
 
 .head ul li{
     float: right;
-    margin: 50px 20px;
+    margin: 0 20px;
 
+}
+
+.head .loginBtn{
+    background-color: #fff;
+    height: 50px;
+    width: 80px;
+    border-radius: 35px;
+
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin: 35px 10px;
+    line-height: 50px;
+    text-align: center;
+
+    display: block;
+    box-shadow: 0 0 7px rgba(128, 128, 128, 0.52);
+
+    transition: color .2s, background-color .2s, box-shadow .2s, transform .2s;
+}
+
+.head .loginBtn:hover{
+    color: white;
+    background-color: rgb(47, 74, 182);
+    box-shadow: 0 0 5px gray;
+
+    transform: scale(1.1);
+}
+
+.head li .mainIcon{
+    font-size: 35px;
+    line-height: 120px;
 }
 
 .userMenu{
@@ -89,10 +117,10 @@ body{
 .navMy{
     display: none;
     float: right;
-    width: 300px;
+    width: 250px;
     position: absolute;
     right: -10px;
-    top: 90px;
+    top: 80px;
     border-radius: 20px;
     background-color: rgb(253, 226, 158);
     padding-bottom: 15px;
@@ -103,7 +131,7 @@ body{
 .userMenu .navMy li{
     display: block;
     width: 90%;
-    height: 70px;
+    height: 50px;
     background-color: rgb(231, 174, 49);
     border-radius: 50px;
     margin: 15px 15px 0;
@@ -118,12 +146,13 @@ body{
 .userMenu .navMy i{
     margin-left: 10px;
     margin-right: 20px;
+    font-size: 18px;
 }
 
 .userMenu .navMy a{
     text-decoration: none;
-    font-size: 20px;
-    line-height: 70px;
+    font-size: 18px;
+    line-height: 50px;
     color: white;
 }
 
@@ -140,10 +169,10 @@ body{
 .bell .notification{
     display: none;
     float: right;
-    width: 400px;
+    width: 350px;
     position: absolute;
     right: -10px;
-    top: 90px;
+    top: 80px;
     border-radius: 20px;
     background-color: rgb(255, 197, 71);
     padding-bottom: 15px;
@@ -166,8 +195,8 @@ body{
 }
 
 .bell .notification i, .bell .notification h4{
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 25px;
     margin: 15px;
     margin-left: 35px;
     color: white;
@@ -176,14 +205,14 @@ body{
 .bell .notify-content{
     margin: 0 10px;
     background-color: white;
-    height: 530px;
+    height: 430px;
     border-radius: 15px;
 }
 
 .bell .notify-content p{
     text-align: center;
-    line-height: 540px;
-    font-size: 25px;
+    line-height: 430px;
+    font-size: 20px;
     color: #b8b8b8;
 }
 
@@ -201,3 +230,9 @@ body{
     color: rgb(230, 230, 230);
     cursor: pointer;
 }
+
+/* -------------hidden setting--------------- */
+.hidden{
+    display: none !important;
+}
+/* ---------------------------- */

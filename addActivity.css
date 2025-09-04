@@ -11,7 +11,7 @@
 
 /* ---------main-content---------- */
 .main-content{
-    width: 1480px;
+    width: 1050px;
     margin: 0 auto;
     background-color: #fff;
     box-sizing: border-box;
@@ -93,7 +93,7 @@
 .basic-information input[type="text"]{}
 
 input.actName, input.address{
-    width: 1000px;
+    width: 70%;
 }
 
 input.address{
@@ -129,7 +129,7 @@ input.address{
 .act-intro textarea{
     display: block;
     resize: none;
-    width: 1300px;
+    width: 90%;
     height: 1000px;
     font-size: 25px;
     line-height: 1.5;
@@ -144,12 +144,12 @@ input.address{
     box-sizing: border-box; */
 
     position: fixed;
-    top: 240px;
+    top: 170px;
     left: 40px;
 
     background-color: #fff;
-    height: 70px;
-    width: 180px;
+    height: 50px;
+    width: 120px;
     /* margin-top: 40px; */
     /* margin-left: 50px; */
     padding-left: 15px;
@@ -165,8 +165,8 @@ input.address{
 }
 
 .left-button i, .left-button p{
-    font-size: 25px;
-    margin: 10px;
+    font-size: 20px;
+    margin: 0 10px;
     line-height: 50px;
     float: left;
 

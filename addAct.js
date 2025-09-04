@@ -2,10 +2,10 @@ $(function(){
 
     $(window).scroll(function(){
         var n = $(window).scrollTop();
-        if(n > 200){
+        if(n > 130){
             $('.left-button').css("top", 40);
         } else {
-            $('.left-button').css("top", 240 - n);
+            $('.left-button').css("top", 170 - n);
         }
     });
     
