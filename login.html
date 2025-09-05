@@ -17,7 +17,7 @@
             width: 780px;
             border-radius: 30px;
             margin: 0 auto;
-            margin-top: 200px;
+            margin-top: 150px;
 
             padding: 70px;
             overflow: hidden;
@@ -42,13 +42,14 @@
             text-align: center;
             font-size: 30px;
             font-weight: 3000;
-            margin: 50px 0;
+            margin-bottom: 50px;
+            margin-top: 10px;
         }
 
         li{
             margin: 30px auto;
             width: 80%;
-            height: 60px;
+            height: 70px;
             
         }
 
@@ -64,25 +65,53 @@
 
         }
 
-        a{
+        .btns{
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 60px;
+            padding-left: 60px;
+
+        }
+
+        .registerLink{
+            text-decoration: none;
+            margin: 35px auto;
+            font-size: 15px;
+            color: black;
+        }
+
+        .registerLink:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+
+        .loginBtn{
+            border: 0;
             background-color: rgba(255, 141, 59, 1);
             height: 45px;
             width: 80px;
             border-radius: 35px;
-
-            text-decoration: none;
-            color: white;
             font-size: 18px;
-            margin: 35px auto;
-            margin-top: 80px;
-            line-height: 45px;
-            text-align: center;
+            margin-right: 15px;
 
-            display: block;
+            color: white;
+            line-height: 45px;
+
             box-shadow: 0 0 7px rgba(128, 128, 128, 0.52);
 
             transition: color .2s, background-color .2s, box-shadow .2s, transform .2s;
         }
+
+        .loginBtn:hover{
+            cursor: pointer;
+            color: white;
+            background-color: rgb(47, 74, 182);
+            box-shadow: 0 0 5px gray;
+
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
@@ -91,13 +120,16 @@
             <img src="cat.JPG" alt="">
         </div>
         <div class="right-content">
-            <h1>登入/ 註冊揪團</h1>
+            <h1>登入揪團</h1>
             <div class="loginArea">
                 <ul>
                     <li>帳號/學號：<input type="text"></li>
-                    <li>密碼：<input type="text"></li>
+                    <li>密碼：<input type="password"></li>
+                    <li class="btns"><button type="submit" class="loginBtn">登入</button>
+                        <a href="javascript:;" class="registerLink">註冊</a>
+                    </li>
                 </ul>
-                <a href="index.html">登入</a>
+
             </div>
         </div>
 
