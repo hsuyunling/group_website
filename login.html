@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入揪團</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         @import url('reset.css');
         body{
@@ -24,6 +26,8 @@
 
             padding: 70px;
             overflow: hidden;
+
+            position: relative;
         }
 
         .left-content{
@@ -118,10 +122,40 @@
             transform: scale(1.1);
         }
 
+        .homepageLink{
+            display: block;
+            height: 50px; width: 50px;
+            border-radius: 30px;
+
+            text-decoration: none;
+            background-color: #ffffff6c;
+            text-align: center;
+            line-height: 50px;
+
+            position: absolute;
+            top: 25px;
+            left: 25px;
+
+        }
+
+        i{
+            color: rgb(35, 35, 35);
+        }
+
+        .homepageLink:hover{
+            background-color: #5e5e5e5a;
+        }
+
+        .homepageLink:hover i{
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
+        <a href="index.html" class="homepageLink"><i class="fa-solid fa-arrow-left"></i> </a>
+
         <div class="left-content">
             <img src="cat.JPG" alt="">
         </div>

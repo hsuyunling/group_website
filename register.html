@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登入揪團</title>
     <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="container">
+        <a href="login.html" class="loginLink"><i class="fa-solid fa-arrow-left"></i> </a>
+
             <h1>註冊揪團</h1>
             <div class="loginArea">
                 <ul>
@@ -17,8 +21,18 @@
                     <li>姓名：<input type="text"></li>
                     <li>暱稱：<input type="text"></li>
                     <li>密碼：<input type="password"></li>
+                    <li class="gender">性別：
+                        <!--  -->
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">男</label>
+                          
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">女</label>
+
+                            <input type="radio" id="null" name="gender" value="null">
+                            <label for="null">不透露</label>
+                    </li>
                     <li class="btns"><button type="submit" class="registerBtn">註冊</button>
-                        <a href="login.html" class="loginLink">登入現有帳號</a>
                     </li>
                 </ul>
 
