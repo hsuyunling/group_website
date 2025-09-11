@@ -12,31 +12,34 @@
     <div class="container">
         <a href="login.html" class="loginLink"><i class="fa-solid fa-arrow-left"></i> </a>
 
-            <h1>註冊揪團</h1>
-            <div class="loginArea">
-                <ul>
-                    <li>帳號/學號：<input type="text"></li>
-                    <li>電子郵件：<input type="text"></li>
-                    <li>電話號碼：<input type="text"></li>
-                    <li>姓名：<input type="text"></li>
-                    <li>暱稱：<input type="text"></li>
-                    <li>密碼：<input type="password"></li>
-                    <li class="gender">性別：
-                        <!--  -->
-                            <input type="radio" id="male" name="gender" value="male">
-                            <label for="male">男</label>
-                          
-                            <input type="radio" id="female" name="gender" value="female">
-                            <label for="female">女</label>
+            <form method="post" action="db.php">
 
-                            <input type="radio" id="null" name="gender" value="null">
-                            <label for="null">不透露</label>
-                    </li>
-                    <li class="btns"><button type="submit" class="registerBtn">註冊</button>
-                    </li>
-                </ul>
+                <h1>註冊揪團</h1>
+                <div class="loginArea">
+                    <ul>
+                        <li>帳號/學號：<input type="text" name="id"></li>
+                        <li>電子郵件：<input type="text" name="email"></li>
+                        <li>電話號碼：<input type="text" name="phone"></li>
+                        <li>姓名：<input type="text" name="name"></li>
+                        <li>暱稱：<input type="text" name="nick"></li>
+                        <li>密碼：<input type="password" name="psw"></li>
+                        <li class="gender">性別：
+                            <!--  -->
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">男</label>
+                            
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">女</label>
 
-            </div>
+                                <input type="radio" id="null" name="gender" value="null">
+                                <label for="null">不透露</label>
+                        </li>
+                        <li class="btns"><button type="submit" class="registerBtn">註冊</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </form>
 
     </div>
 
