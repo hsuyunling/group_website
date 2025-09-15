@@ -4,8 +4,8 @@ $(function(){
     $('.main-content li').click(function(){
         scrollTop = window.scrollY;
         $('.btns').removeAttr('style');
-        $('.main-content li').removeClass('detailed');
-        $(this).addClass('detailed');
+        $('.main-content li').removeClass('detailed'); //remove class 'hidden'
+        $(this).addClass('detailed');//add class 'hidden'
         $('.btns').css('display', 'block');
         $('body').css({
             position: 'fixed',
